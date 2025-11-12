@@ -19,12 +19,12 @@ window.addEventListener("scroll", () => {
     navbar.className =
       "w-full flex justify-between items-center px-14 py-3 mt-5 bg-white/50 backdrop-blur-xl text-gray-900 rounded-full shadow-md transition-all duration-500 ease-in-out";
     iconMenu.classList.replace("text-white", "text-gray-900");
-    logoImg.src = "../src/assets/images/logo_dark.png";
+    logoImg.src = "/assets/images/logo_dark.png";
   } else {
     navbar.className =
       "w-full flex justify-between items-center px-14 py-3 bg-[#2D3142] text-white rounded-b-[25px] transition-all duration-500 ease-in-out";
     iconMenu.classList.replace("text-gray-900", "text-white");
-    logoImg.src = "../src/assets/images/logo_light.png";
+    logoImg.src = "/assets/images/logo_light.png";
   }
 });
 
