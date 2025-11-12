@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ThinkLab - Turning Data Into Direction</title>
+  <link rel="icon" type="image/png" href="../src/assets/images/logo_icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-[Poppins] bg-[#F7F7F7] text-[#2F2F2F]">
+<header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out">
+  <nav id="navbar" class="w-full flex justify-between items-center px-14 py-3 bg-[#2D3142] text-white rounded-b-[25px] transition-all duration-500 ease-in-out">
+    <a href="#home" class="flex items-center gap-2 text-2xl font-semibold tracking-wide">
+      <img id="logoImg" src="../src/assets/images/logo_light.png" alt="THINKLAB Logo" class="w-[120px] md:w-[175px] transition-all duration-500">
+    </a>
+    <ul class="hidden md:flex items-center gap-8 text-[15px] font-medium">
+      <li><a href="#home" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="house" class="w-4 h-4"></i>Home</a></li>
+      <li><a href="#services" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="message-square-text" class="w-4 h-4"></i>Our Product & Services</a></li>
+      <li><a href="#about" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="users" class="w-4 h-4"></i>About</a></li>
+      <li><a href="#testimoni" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="newspaper" class="w-4 h-4"></i>Testimoni</a></li>
+      <li>
+        <a href="contact.html" class="flex items-center gap-2 bg-[#A61C3C] hover:bg-[#8C1633] text-white px-4 py-2 rounded-full transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>Contact
+        </a>
+      </li>
+    </ul>
+    <button id="menuBtn" class="md:hidden">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden flex-col bg-white/80 backdrop-blur-md text-[#2D3142] font-medium px-6 pb-4 transition-all duration-300 rounded-2xl mt-4">
+    <a href="#home" class="py-2 flex items-center gap-2"><i data-lucide="house" class="w-4 h-4"></i>Home</a>
+    <a href="#services" class="py-2 flex items-center gap-2"><i data-lucide="message-square-text" class="w-4 h-4"></i>Services</a>
+    <a href="#about" class="py-2 flex items-center gap-2"><i data-lucide="users" class="w-4 h-4"></i>About</a>
+    <a href="#news" class="py-2 flex items-center gap-2"><i data-lucide="newspaper" class="w-4 h-4"></i>News</a>
+    <a href="contact.html" class="py-2 flex items-center gap-2 bg-[#A61C3C] text-white px-4 rounded-lg">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>Contact</a>
+  </div>
+</header>
+<section id="home" class="pt-[120px] min-h-screen flex items-center justify-center text-center px-6">
+  <div data-aos="fade-up">
+    <h1 class="text-5xl md:text-6xl font-semibold text-[#2D3142] leading-tight mb-4">Turning Data Into Direction</h1>
+    <p class="text-[#8B8B8B] text-[17px] mb-8">THINKLAB provides professional statistical analysis services — from data survey to consultation.</p>
+    <div class="flex justify-center gap-4">
+      <a href="#services" class="bg-[#A61C3C] hover:bg-[#8C1633] text-white px-6 py-3 rounded-lg transition">Our Services</a>
+      <a href="contact.html" class="border border-[#A61C3C] text-[#A61C3C] hover:bg-[#A61C3C] hover:text-white px-6 py-3 rounded-lg transition">Get Consultation</a>
+    </div>
+  </div>
+</section>
+<section id="services" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-semibold text-[#2D3142] mb-3" data-aos="fade-up">Our Product & Services</h2>
+    <p class="text-[#8B8B8B] mb-12" data-aos="fade-up" data-aos-delay="80">Solusi statistik profesional untuk akademik, bisnis, dan riset.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch">
+      <div data-aos="fade-right">
+        <div class="group border border-[#E8E8E8] rounded-2xl p-8 bg-white flex flex-col items-center text-center h-full hover:scale-105 hover:shadow-2xl hover:border-[#A61C3C] transition-all duration-300 ease-out">
+          <div class="w-20 h-20 flex items-center justify-center rounded-3xl bg-[#FCE8E8] text-[#A61C3C] group-hover:bg-[#A61C3C] group-hover:text-white mb-5 transition-all duration-300">
+            <i data-lucide="users" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-[#A61C3C] group-hover:text-[#8C1633] mb-2">Lab Konsultasi</h3>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="80">
+        <div class="group border border-[#E8E8E8] rounded-2xl p-8 bg-white flex flex-col items-center text-center h-full hover:scale-105 hover:shadow-2xl hover:border-[#A61C3C] transition-all duration-300 ease-out">
+          <div class="w-20 h-20 flex items-center justify-center rounded-3xl bg-[#FCE8E8] text-[#A61C3C] group-hover:bg-[#A61C3C] group-hover:text-white mb-5 transition-all duration-300">
+            <i data-lucide="bar-chart-3" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-[#A61C3C] group-hover:text-[#8C1633] mb-2">Lab Analisis</h3>
+        </div>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="150">
+        <button id="labProjekBtn" class="group w-full border border-[#E8E8E8] rounded-2xl p-8 bg-white flex flex-col items-center text-center h-full hover:scale-105 hover:shadow-2xl hover:border-[#A61C3C] transition-all duration-300 ease-out">
+          <div class="w-20 h-20 flex items-center justify-center rounded-3xl bg-[#FCE8E8] text-[#A61C3C] group-hover:bg-[#A61C3C] group-hover:text-white mb-5 transition-all duration-300">
+            <i data-lucide="laptop" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-[#A61C3C] group-hover:text-[#8C1633] mb-2">Lab Projek</h3>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="labProjekModal" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 transition-all duration-300">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-lg w-[90%] text-center relative">
+      <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-[#A61C3C]">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <h2 class="text-2xl font-semibold text-[#A61C3C] mb-4">Lab Projek</h2>
+      <h3 class="text-xl font-medium text-[#A61C3C] mb-4">Pilih Jenis Layanan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-4 border rounded-xl hover:bg-[#FCE8E8] hover:border-[#A61C3C] cursor-pointer transition">Survei</div>
+        <div class="p-4 border rounded-xl hover:bg-[#FCE8E8] hover:border-[#A61C3C] cursor-pointer transition">Program Analisis</div>
+        <div class="p-4 border rounded-xl hover:bg-[#FCE8E8] hover:border-[#A61C3C] cursor-pointer transition">Dashboard</div>
+        <div class="p-4 border rounded-xl hover:bg-[#FCE8E8] hover:border-[#A61C3C] cursor-pointer transition">UI / UX Design</div>
+        <div class="p-4 border rounded-xl hover:bg-[#FCE8E8] hover:border-[#A61C3C] cursor-pointer transition">Website</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="pt-16 [#F7F7F7]">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-semibold text-[#2D3142] mb-10 text-center" data-aos="fade-up">About Us</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div data-aos="fade-right" class="space-y-5 text-justify text-[#4A4A4A] leading-relaxed">
+        <p><strong>THINKLAB</strong> merupakan singkatan dari “Think Laboratory”. Nama “Think” melambangkan cara berpikir rasional dan kritis, sementara “Lab” menggambarkan ruang eksperimen ilmiah tempat berbagai ide diuji dan dikembangkan secara sistematis.</p>
+        <p>THINKLAB hadir sebagai mitra profesional dalam memberikan solusi berbasis data bagi kebutuhan akademik, bisnis, dan penelitian. Kami berkomitmen untuk membantu berbagai organisasi, lembaga, dan perusahaan dalam mengoptimalkan potensi data mereka melalui pendekatan analitis yang tepat dan efisien.</p>
+        <p>Sejak berdiri, THINKLAB telah berfokus pada pelayanan berkualitas dengan menjunjung tinggi profesionalisme, ketelitian, dan akurasi. Dengan dukungan tim ahli statistik berpengalaman, kami terus berinovasi untuk menghadirkan solusi data yang relevan dan berdampak nyata.</p>
+        <p>Kami percaya bahwa <span class="text-[#A61C3C] font-semibold">data adalah kunci</span> dalam pengambilan keputusan yang lebih baik. THINKLAB bertekad membantu klien memanfaatkan kekuatan analisis data untuk mencapai tujuan mereka dengan hasil yang valid dan bermakna.</p>
+      </div>
+      <div data-aos="fade-left" class="flex justify-center items-center">
+        <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-md">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/7DQC3ELwzNk?si=UWxe7yqApVXDW06A" title="THINKLAB Video Profile" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="vision-mission" class="pt-[50px] pb-24 bg-[#F7F7F7]">
+  <div class="max-w-6xl mx-auto text-center px-6">
+    <h2 class="text-4xl font-semibold text-[#2D3142] mb-12" data-aos="fade-up">Vision & Mission</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div data-aos="fade-right">
+        <div class="group border border-[#E8E8E8] rounded-2xl p-8 bg-white shadow-sm text-left transform-gpu transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:border-[#A61C3C]">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-20 h-20 flex items-center justify-center rounded-3xl bg-[#FCE8E8] text-[#A61C3C] transition-all duration-300 group-hover:bg-[#A61C3C] group-hover:text-white">
+              <i data-lucide="eye" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#A61C3C] transition-all duration-300 group-hover:text-[#8C1633]">Vision</h3>
+          </div>
+          <p class="text-[#8B8B8B] text-[15px] leading-relaxed">Menjadi lembaga konsultan statistik terpercaya yang mampu memberikan solusi berbasis data secara profesional, akurat, dan inovatif untuk mendukung pengambilan keputusan di berbagai bidang.</p>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="group border border-[#E8E8E8] rounded-2xl p-8 bg-white shadow-sm text-left transform-gpu transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:border-[#A61C3C]">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-20 h-20 flex items-center justify-center rounded-3xl bg-[#FCE8E8] text-[#A61C3C] transition-all duration-300 group-hover:bg-[#A61C3C] group-hover:text-white">
+              <i data-lucide="target" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#A61C3C] transition-all duration-300 group-hover:text-[#8C1633]">Mission</h3>
+          </div>
+          <ul class="list-disc list-outside pl-5 text-[#8B8B8B] text-[15px] space-y-1 leading-relaxed">
+            <li>Membantu klien menemukan solusi terbaik untuk permasalahan berbasis data melalui pendekatan analitis yang tepat, objektif, dan terukur.</li>
+            <li>Membangun kemitraan profesional yang berkelanjutan dengan berbagai pihak.</li>
+            <li>Menjaga integritas, profesionalisme, serta kepercayaan dengan menjunjung tinggi ketelitian dan akurasi.</li>
+            <li>Mengembangkan inovasi teknologi analisis data untuk solusi yang efisien dan relevan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="testimoni" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-semibold text-[#2D3142] mb-10 text-center">Testimoni</h2>
+    <div class="hidden md:flex justify-center items-stretch gap-10">
+      <div class="flex justify-center items-stretch"><img src="../src/assets/images/Testi_1.png" alt="Christie" class="w-[400px] rounded-t-lg object-contain"></div>
+      <div class="flex justify-center self-stretch"><div class="w-[2px] bg-gray-300 border-l-2 border-dashed border-gray-400"></div></div>
+      <div class="flex justify-center items-stretch"><img src="../src/assets/images/Testi_2.png" alt="Salsa" class="w-[400px] rounded-t-lg object-contain"></div>
+      <div class="flex justify-center self-stretch"><div class="w-[2px] bg-gray-300 border-l-2 border-dashed border-gray-400"></div></div>
+      <div class="flex justify-center items-stretch"><img src="../src/assets/images/Testi_3.png" alt="Ahmad" class="w-[400px] rounded-t-lg object-contain"></div>
+    </div>
+    <div class="md:hidden flex flex-col gap-6 mt-6">
+      <img src="../src/assets/images/Testi_1.png" alt="Christie" class="w-full rounded-t-lg">
+      <div class="border-t-2 border-dashed border-gray-300 w-full"></div>
+      <img src="../src/assets/images/Testi_2.png" alt="Salsa" class="w-full rounded-t-lg">
+      <div class="border-t-2 border-dashed border-gray-300 w-full"></div>
+      <img src="../src/assets/images/Testi_3.png" alt="Ahmad" class="w-full rounded-t-lg">
+    </div>
+  </div>
+</section>
+<footer class="bg-[#2D3142] text-white">
+  <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
+    <div>
+      <h3 class="text-2xl font-semibold">THINKLAB</h3>
+      <p class="text-sm text-white/70 mt-2">Turning Data Into Direction</p>
+      <p class="text-sm text-white/60 mt-4">Precision in Numbers, Vision in Solutions.</p>
+    </div>
+    <div>
+      <h4 class="text-[15px] uppercase text-white/80 tracking-wide">Quick Links</h4>
+      <ul class="mt-3 space-y-2 text-white/70">
+        <li><a href="#home" class="hover:text-white">Home</a></li>
+        <li><a href="#services" class="hover:text-white">Services</a></li>
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-[15px] uppercase text-white/80 tracking-wide">Contact</h4>
+      <ul class="mt-3 space-y-3 text-white/70">
+        <li class="flex items-center gap-3"><i data-lucide="map-pin" class="w-6 h-6 text-white"></i><span>Kertajaya Indah, Surabaya</span></li>
+        <li class="flex items-center gap-3"><i data-lucide="phone" class="w-6 h-6 text-white"></i><span>+6284-533-771-234</span></li>
+        <li class="flex items-center gap-3"><i data-lucide="mail" class="w-6 h-6 text-white"></i><span>think.lab@gmail.com</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/15">
+    <div class="text-center py-6 text-white/70 text-sm">© 2025 THINKLAB. All rights reserved.</div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script/script_index.js"></script>
+</body>
+</html>

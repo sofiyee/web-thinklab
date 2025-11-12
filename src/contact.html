@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ThinkLab - Contact</title>
+  <link rel="icon" type="image/png" href="../src/assets/images/logo_icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-[Poppins] bg-[#F7F7F7] text-[#2F2F2F]">
+<header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out">
+  <nav id="navbar" class="w-full flex justify-between items-center px-14 py-3 bg-[#2D3142] text-white rounded-b-[25px] transition-all duration-500 ease-in-out">
+    <a href="index.html#home" class="flex items-center gap-2 text-2xl font-semibold tracking-wide">
+      <img id="logoImg" src="../src/assets/images/logo_light.png" alt="THINKLAB Logo" class="w-[120px] md:w-[175px] transition-all duration-500">
+    </a>
+    <ul class="hidden md:flex items-center gap-8 text-[15px] font-medium">
+      <li><a href="index.html#home" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="house" class="w-4 h-4"></i>Home</a></li>
+      <li><a href="index.html#services" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="message-square-text" class="w-4 h-4"></i>Our Product & Services</a></li>
+      <li><a href="index.html#about" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="users" class="w-4 h-4"></i>About</a></li>
+      <li><a href="index.html#testimoni" class="flex items-center gap-2 hover:text-[#A61C3C] transition"><i data-lucide="newspaper" class="w-4 h-4"></i>Testimoni</a></li>
+      <li>
+        <a href="contact.html" class="flex items-center gap-2 bg-[#A61C3C] hover:bg-[#8C1633] text-white px-4 py-2 rounded-full transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>Contact
+        </a>
+      </li>
+    </ul>
+    <button id="menuBtn" class="md:hidden">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden flex-col bg-white/80 backdrop-blur-md text-[#2D3142] font-medium px-6 pb-4 transition-all duration-300 rounded-2xl">
+    <a href="index.html#home" class="py-2 flex items-center gap-2"><i data-lucide="house" class="w-4 h-4"></i>Home</a>
+    <a href="index.html#services" class="py-2 flex items-center gap-2"><i data-lucide="message-square-text" class="w-4 h-4"></i>Services</a>
+    <a href="index.html#about" class="py-2 flex items-center gap-2"><i data-lucide="users" class="w-4 h-4"></i>About</a>
+    <a href="index.html#testimoni" class="py-2 flex items-center gap-2"><i data-lucide="newspaper" class="w-4 h-4"></i>Testimoni</a>
+    <a href="contact.html" class="py-2 flex items-center gap-2 bg-[#A61C3C] text-white px-4 rounded-lg">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>Contact</a>
+  </div>
+</header>
+<section id="contact" class="pt-[120px] py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-semibold text-[#2D3142] mb-3" data-aos="fade-up">Hubungi Kami</h2>
+    <p class="text-[#8B8B8B] mb-12" data-aos="fade-up" data-aos-delay="80">Kami siap membantu kebutuhan analisis data Anda.</p>
+    <div class="grid md:grid-cols-2 gap-10 text-left">
+      <div class="border border-[#E8E8E8] rounded-2xl p-8 space-y-6" data-aos="fade-right">
+        <div class="flex gap-3 text-[#A61C3C] items-center">
+          <i data-lucide="map-pin" class="w-8 h-8"></i>
+          <div>
+            <p class="text-sm text-[#8B8B8B]">Address</p>
+            <p class="font-semibold">Kertajaya Indah, Surabaya</p>
+          </div>
+        </div>
+        <div class="flex gap-3 text-[#A61C3C] items-center">
+          <i data-lucide="phone" class="w-8 h-8"></i>
+          <div>
+            <p class="text-sm text-[#8B8B8B]">Phone</p>
+            <p class="font-semibold">+6284-533-771-234</p>
+          </div>
+        </div>
+        <div class="flex gap-3 text-[#A61C3C] items-center">
+          <i data-lucide="mail" class="w-8 h-8"></i>
+          <div>
+            <p class="text-sm text-[#8B8B8B]">Email</p>
+            <p class="font-semibold">think.lab@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <form class="border border-[#E8E8E8] rounded-2xl p-8" data-aos="fade-left"
+            onsubmit="event.preventDefault();alert('Terima kasih! Kami akan segera menghubungi Anda.');">
+        <label class="block mb-2 font-semibold">Name</label>
+        <input type="text" class="w-full border border-[#E8E8E8] rounded-lg px-3 py-2 mb-4" required>
+        <label class="block mb-2 font-semibold">Email</label>
+        <input type="email" class="w-full border border-[#E8E8E8] rounded-lg px-3 py-2 mb-4" required>
+        <label class="block mb-2 font-semibold">Message</label>
+        <textarea rows="4" class="w-full border border-[#E8E8E8] rounded-lg px-3 py-2 mb-6" required></textarea>
+        <button class="bg-[#A61C3C] hover:bg-[#8C1633] text-white px-6 py-3 rounded-lg w-full transition">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="bg-[#2D3142] text-white">
+  <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
+    <div>
+      <h3 class="text-2xl font-semibold">THINKLAB</h3>
+      <p class="text-sm text-white/70 mt-2">Turning Data Into Direction</p>
+      <p class="text-sm text-white/60 mt-4">Precision in Numbers, Vision in Solutions.</p>
+    </div>
+    <div>
+      <h4 class="text-[15px] uppercase text-white/80 tracking-wide">Quick Links</h4>
+      <ul class="mt-3 space-y-2 text-white/70">
+        <li><a href="index.html#home" class="hover:text-white">Home</a></li>
+        <li><a href="index.html#services" class="hover:text-white">Services</a></li>
+        <li><a href="index.html#about" class="hover:text-white">About</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-[15px] uppercase text-white/80 tracking-wide">Contact</h4>
+      <ul class="mt-3 space-y-3 text-white/70">
+        <li class="flex items-center gap-3"><i data-lucide="map-pin" class="w-6 h-6 text-white"></i><span>Kertajaya Indah, Surabaya</span></li>
+        <li class="flex items-center gap-3"><i data-lucide="phone" class="w-6 h-6 text-white"></i><span>+6284-533-771-234</span></li>
+        <li class="flex items-center gap-3"><i data-lucide="mail" class="w-6 h-6 text-white"></i><span>think.lab@gmail.com</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/15">
+    <div class="text-center py-6 text-white/70 text-sm">© 2025 THINKLAB. All rights reserved.</div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script/script_contact.js"></script>
+</body>
+</html>
